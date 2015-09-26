@@ -1,6 +1,6 @@
 <?php
 
-class HomeController extends BaseController {
+class DocumentationController extends BaseController {
 
 	/*
 	|--------------------------------------------------------------------------
@@ -15,9 +15,18 @@ class HomeController extends BaseController {
 	|
 	*/
 
-	public function showWelcome()
+	public function getIndex()
 	{
-		return View::make('hello');
+		return 'index';
 	}
 
+	public function getPage($page)
+	{
+		if (View::exists('documentation.' . $page))
+		{
+			return View::make('documentation.' . $page);
+		}
+
+		return App::abort(404);
+	}
 }

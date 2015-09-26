@@ -1,0 +1,29 @@
+@include component(sidebar)
+  ul
+    list-style: none
+    width: 100%
+    padding: 0
+    margin: 0
+    font-weight: 300
+
+  li
+    height: 40px
+    line-height: 40px
+    padding-left: 10px
+    color: $color-shade-1
+    margin-bottom: 10px
+    +border-radius(5px)
+
+    &:hover, &:focus
+      background-color: $color-shade-5
+      color: white
+
+    & > a
+      height: 100%
+      width: 100%
+      display: block
+
+    @include option(active)
+      background-color: $color-blue
+      color: white
+

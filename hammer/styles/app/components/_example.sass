@@ -1,0 +1,17 @@
+@include component(example)
+
+  @include part(grid)
+    height: 4em
+    line-height: 4em
+    background-color: $color-shade-6
+    text-align: center
+    color: $color-shade-2
+    font-weight: 300
+
+  @include part(spacer)
+    clear: both
+    height: 1em
+    content: " "
+
+    @include option(md)
+      height: 4em
