@@ -1383,6 +1383,10 @@ a {
     color: #02baf2; }
     .button.\--stroke:hover, .button.\--stroke:focus {
       border-color: #02baf2; }
+  .button.\--block {
+    text-align: center;
+    width: 100%;
+    display: block; }
 
 .hero {
   width: 100%;

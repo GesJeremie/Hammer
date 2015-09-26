@@ -41,4 +41,20 @@
   <div class="example__spacer --md"></div>
 
   <script src="https://gist.github.com/GesJeremie/56c7aa897806bcbcc127.js"></script>
+
+  <div class="example__spacer --md"></div>
+
+  <h2>Block</h2>
+
+  <p>Sometimes your button must fit the whole space.</p>
+
+  <div>
+    <a class="button --xl --block">I take the whole space</a>
+  </div>
+
+  <div class="example__spacer --md"></div>
+
+  <script src="https://gist.github.com/GesJeremie/e7b3097f9ae650f0de47.js"></script>
+
+
 @endsection
