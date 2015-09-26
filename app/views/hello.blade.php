@@ -17,7 +17,7 @@
 	<script>require('initialize');</script>
 
 
-	<title>Laravel PHP Framework</title>
+	<title>Laravel PHP Framework test</title>
 
 </head>
 <body>
