@@ -22,8 +22,9 @@
 </head>
 <body>
 
-  <div class="container">
-    <div class="grid-3">
+  <div class="container-fluid">
+    <div class="example__spacer --md"></div>
+    <div class="grid-2">
       <div class="sidebar">
         <ul>
           <li><a href="#">Sass Structure</a></li>
@@ -34,7 +35,7 @@
         </ul>
       </div>
     </div>
-    <div class="grid-9">
+    <div class="grid-9 push-1">
       @yield('content')
     </div>
   </div>

@@ -1186,7 +1186,7 @@ html.default {
   margin: 0 auto; }
 
 .container-fluid {
-  width: 100%;
+  width: 95%;
   margin: 0 auto; }
 
 html {
@@ -1196,7 +1196,6 @@ html {
   box-sizing: inherit; }
 
 body {
-  font-size: 62.5%/1.5;
   color: #364347;
   font-family: "Lato", sans-serif;
   font-weight: 400; }
@@ -1206,25 +1205,20 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0; }
 
 h1 {
-  font-size: 3.2em; }
+  font-size: 48px; }
 
 h2 {
-  font-size: 3em; }
+  font-size: 36px; }
 
 h3 {
-  font-size: 2.8em; }
+  font-size: 24px;
+  font-style: italic; }
 
 h4 {
-  font-size: 2.6em; }
-
-h5 {
-  font-size: 2.4em; }
-
-h6 {
-  font-size: 2.2em; }
+  font-size: 18px; }
 
 p {
-  font-size: 1.2em;
+  font-size: 16px;
   line-height: 1.7em;
   font-weight: 300;
   text-align: justify; }
@@ -1264,6 +1258,8 @@ a {
   .sidebar li.\--active {
     background-color: #02baf2;
     color: white; }
+  .sidebar li.\--with-icon > i, .sidebar li.\--with-icon > a > i {
+    padding-right: 5px; }
 
 .alert {
   width: 100%;
