@@ -1,0 +1,86 @@
+// ===========================================================
+// Alert.sass
+// ===========================================================
+//
+// Alerts to catch the attention of the user.
+//
+// Options:
+//
+// Colors:
+// --success Green color
+// --info Purple color
+// --warning Yellow color
+// --danger Red color
+//
+// Misc
+// --fit The width will fit the text
+// --square Square borders
+// --close Mandatory if we use the javascript close system
+//
+// @example:
+//
+// <div class="alert --danger --close" data-toggle="alert-close">Danger! A zombie wants <strong>to kill</strong> you. <span><i class="fa fa-times"></i></span></div>
+//
+@include component(alert)
+  width: 100%
+  padding: 20px
+  font-weight: 300
+  color: $color-blue
+  background-color: $color-blue-light
+  +border-radius()
+  position: relative
+
+  strong, a
+    font-weight: 700
+
+  a:hover, a:focus
+    border-bottom: 1px dotted $color-blue
+
+  span
+    position: absolute
+    top: 20px
+    right: 20px
+    color: inherit
+    cursor: pointer
+
+    &:hover
+      +opacity(0.6)
+
+  @include option(success)
+    background-color: $color-green-light
+    color: $color-green
+
+    a:hover, a:focus
+      border-bottom: 1px dotted $color-green
+
+  @include option(info)
+    background-color: $color-purple-light
+    color: $color-purple
+
+    a:hover, a:focus
+      border-bottom: 1px dotted $color-purple
+
+  @include option(warning)
+    background-color: $color-yellow-light
+    color: $color-yellow-reverse
+
+    a:hover, a:focus
+      border-bottom: 1px dotted $color-yellow
+
+  @include option(danger)
+    background-color: $color-red-light
+    color: $color-red
+
+    a:hover, a:focus
+      border-bottom: 1px dotted $color-red
+
+  @include option(square)
+    +border-radius(0px)
+
+  @include option(fit)
+    width: auto
+    display: inline-block
+
+  @include option(close)
+    padding-right: 45px
+

@@ -1,0 +1,58 @@
+// ===========================================================
+// Table.sass
+// ===========================================================
+//
+// Prettify tables
+//
+// Options:
+//
+// --compact Compact the table when you want display a lot of datas
+//
+@include component(table)
+  width: 100%
+  border: 1px solid $color-shade-5
+  border-top-right-radius: 5px
+  border-top-left-radius: 5px
+  border-bottom-right-radius: 5px
+  border-bottom-left-radius: 5px
+
+  table
+    width: 100%
+    font-weight: 300
+    color: $color-shade-3
+    border-collapse: collapse
+    border: 0
+
+    thead > tr > th
+      height: 5em
+      +font-montserrat(400)
+      padding: 5px
+
+    thead > tr
+      background-color: $color-shade-5
+      color: white
+
+
+    tbody > tr > td
+      text-align: center
+      height: 4em
+
+    tbody > tr
+      border-bottom: 1px dashed $color-shade-5
+
+      &:last-child
+        border-bottom: 0
+
+  @include option(compact)
+
+    table
+
+      thead > tr > th
+        height: 2.5em
+
+      tbody > tr > td
+        text-align: center
+        height: 2.2em
+
+
+

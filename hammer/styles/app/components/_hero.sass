@@ -1,0 +1,52 @@
+// ===========================================================
+// Hero.sass
+// ===========================================================
+//
+// @example :
+//
+// <div class="container-fluid">
+//   <div class="hero">
+//     <div class="hero__container">
+//       <div class="hero__title">Ges Jeremie</div>
+//         <div class="hero__headline">Backend & Frontend developer</div>
+//       </div>
+//      </div>
+//    </div>
+//
+@include component(hero)
+  width: 100%
+  color: white
+  background-color: $color-shade-1
+  background-size: cover
+  background-repeat: no-repeat
+  background-position: center center
+  position: relative
+  padding-bottom: 3em
+  padding-top: 3em
+
+  @include part(title)
+    text-align: center
+    font-size: 3.6em
+    +font-montserrat(700)
+    text-transform: uppercase
+
+  @include part(headline)
+    text-align: center
+    font-size: 1.4em
+    +font-lato(300)
+
+  @include part(container)
+    position: relative
+
+  @include part(overlay)
+    &:after
+      background: $color-shade-1
+      position: absolute
+      top: 0
+      bottom: 0
+      right: 0
+      left: 0
+      +opacity(0.4)
+      content: " "
+
+

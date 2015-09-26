@@ -1,0 +1,59 @@
+@include component(nav)
+  background-color: white
+  border: 2px solid $color-shade-5
+  height: 5em
+  +border-radius(5px)
+  line-height: 5em
+
+  @include option(borderless)
+    border: 0
+    +border-radius(0px)
+
+  @include option(reverse)
+    background-color: $color-shade-1
+    color: white
+    border: 0
+
+    @include part(brand)
+      color: white
+
+    @include part(link)
+      color: white
+
+      &:hover, &:focus
+        +opacity(0.7)
+
+      @include option(active)
+        +opacity(0.7)
+
+    @include part(message)
+      color: white
+
+      strong
+        color: white
+        font-weight: 400
+
+  @include part(brand)
+    +font-montserrat(700)
+    color: $color-shade-3
+    font-size: 1.6em
+    text-align: center
+
+  @include part(link)
+    color: $color-shade-3
+    font-size: 1em
+    padding: 5px 10px
+    font-weight: 400
+
+    &:hover, &:focus
+      color: $color-blue
+
+    @include option(active)
+      color: $color-blue
+
+  @include part(message)
+    color: $color-shade-4
+
+    strong
+      color: $color-shade-3
+      font-weight: 400
