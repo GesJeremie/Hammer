@@ -17,13 +17,27 @@
   <script>require('initialize');</script>
 
 
-  <title>Hammer</title>
+  <title>Hammer Documentation</title>
 
 </head>
 <body>
 
-  <div class="container">
+  <div class="container-fluid">
+    <div class="example__spacer --md"></div>
+    <div class="grid-2">
+      <div class="sidebar">
+        <ul>
+          <li><a href="#">Sass Structure</a></li>
+          <li><a href="{{ url('documentation/grid') }}">Grid System</a></li>
+          <li><a href="{{ url('documentation/typography') }}">Typography</a></li>
+          <li><a href="{{ url('documentation/sidebar') }}">Sidebar</a></li>
+          <li>Alerts</li>
+        </ul>
+      </div>
+    </div>
+    <div class="grid-9 push-1">
       @yield('content')
+    </div>
   </div>
 </body>
 </html>

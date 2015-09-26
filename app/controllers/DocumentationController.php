@@ -2,6 +2,8 @@
 
 class DocumentationController extends BaseController {
 
+	protected $layout = 'layouts.documentation';
+
 	/*
 	|--------------------------------------------------------------------------
 	| Default Home Controller
@@ -24,9 +26,12 @@ class DocumentationController extends BaseController {
 	{
 		if (View::exists('documentation.' . $page))
 		{
-			return View::make('documentation.' . $page);
+			$this->layout->content = View::make('documentation.' . $page);
+		}
+		else
+		{
+			return App::abort(404);
 		}
 
-		return App::abort(404);
 	}
 }

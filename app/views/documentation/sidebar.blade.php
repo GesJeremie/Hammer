@@ -1,5 +1,3 @@
-@extends('layouts.master')
-
 @section('content')
   <h1>Sidebar</h1>
 

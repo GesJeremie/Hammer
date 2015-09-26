@@ -14,3 +14,6 @@
 // Documentation
 Route::get('/documentation', 'DocumentationController@getIndex');
 Route::get('/documentation/{page}', 'DocumentationController@getPage');
+Route::get('/', function() {
+  return View::make('home');
+});
