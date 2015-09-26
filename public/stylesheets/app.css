@@ -1265,7 +1265,7 @@ a {
   width: 100%;
   padding: 20px;
   font-weight: 300;
-  color: #02baf2;
+  color: #364347;
   background-color: #ccf1fc;
   -webkit-border-radius: 5px;
   -khtml-border-radius: 5px;
@@ -1273,7 +1273,8 @@ a {
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
   border-radius: 5px;
-  position: relative; }
+  position: relative;
+  vertical-align: middle; }
   .alert strong, .alert a {
     font-weight: 700; }
   .alert a:hover, .alert a:focus {
@@ -1294,23 +1295,19 @@ a {
       -o-opacity: 0.6;
       opacity: 0.6; }
   .alert.\--success {
-    background-color: #d8f0ee;
-    color: #3eb5ac; }
+    background-color: #d8f0ee; }
     .alert.\--success a:hover, .alert.\--success a:focus {
       border-bottom: 1px dotted #3eb5ac; }
   .alert.\--info {
-    background-color: #eee8f7;
-    color: #a88cd5; }
+    background-color: #eee8f7; }
     .alert.\--info a:hover, .alert.\--info a:focus {
       border-bottom: 1px dotted #a88cd5; }
   .alert.\--warning {
-    background-color: #fef6e1;
-    color: #f3bc65; }
+    background-color: #fef6e1; }
     .alert.\--warning a:hover, .alert.\--warning a:focus {
       border-bottom: 1px dotted #fad46b; }
   .alert.\--danger {
-    background-color: #fedada;
-    color: #f84545; }
+    background-color: #fedada; }
     .alert.\--danger a:hover, .alert.\--danger a:focus {
       border-bottom: 1px dotted #f84545; }
   .alert.\--square {
@@ -1320,10 +1317,10 @@ a {
     -ms-border-radius: 0px;
     -o-border-radius: 0px;
     border-radius: 0px; }
-  .alert.\--fit {
+  .alert.\--fit-text {
     width: auto;
     display: inline-block; }
-  .alert.\--close {
+  .alert.\--with-close {
     padding-right: 45px; }
 
 .hero {

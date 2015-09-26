@@ -31,12 +31,14 @@
           <li><a href="{{ url('documentation/grid') }}">Grid System</a></li>
           <li><a href="{{ url('documentation/typography') }}">Typography</a></li>
           <li><a href="{{ url('documentation/sidebar') }}">Sidebar</a></li>
-          <li>Alerts</li>
+          <li><a href="{{ url('documentation/alert') }}">Alerts</a></li>
         </ul>
       </div>
     </div>
     <div class="grid-9 push-1">
       @yield('content')
+      <div class="example__spacer --md"></div>
+
     </div>
   </div>
 </body>

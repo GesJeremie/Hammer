@@ -25,10 +25,11 @@
   width: 100%
   padding: 20px
   font-weight: 300
-  color: $color-blue
+  color: $color-shade-1
   background-color: $color-blue-light
   +border-radius()
   position: relative
+  vertical-align: middle
 
   strong, a
     font-weight: 700
@@ -48,28 +49,24 @@
 
   @include option(success)
     background-color: $color-green-light
-    color: $color-green
 
     a:hover, a:focus
       border-bottom: 1px dotted $color-green
 
   @include option(info)
     background-color: $color-purple-light
-    color: $color-purple
 
     a:hover, a:focus
       border-bottom: 1px dotted $color-purple
 
   @include option(warning)
     background-color: $color-yellow-light
-    color: $color-yellow-reverse
 
     a:hover, a:focus
       border-bottom: 1px dotted $color-yellow
 
   @include option(danger)
     background-color: $color-red-light
-    color: $color-red
 
     a:hover, a:focus
       border-bottom: 1px dotted $color-red
@@ -77,10 +74,11 @@
   @include option(square)
     +border-radius(0px)
 
-  @include option(fit)
+  @include option(fit-text)
     width: auto
     display: inline-block
 
-  @include option(close)
+  @include option(with-close)
     padding-right: 45px
+
 
