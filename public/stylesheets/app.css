@@ -1332,6 +1332,7 @@ a {
   outline: 0;
   border: 0;
   cursor: pointer;
+  border: 2px solid transparent;
   -webkit-border-radius: 5px;
   -khtml-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -1343,10 +1344,36 @@ a {
   .button.\--disabled {
     cursor: default; }
   .button.\--primary {
-    background-color: #93a4aa;
-    color: #364347; }
+    background-color: #009dcd;
+    color: white; }
     .button.\--primary:hover, .button.\--primary:focus {
-      background-color: #b2c6cd; }
+      background-color: #02baf2; }
+  .button.\--success {
+    background-color: #28948c;
+    color: white; }
+    .button.\--success:hover, .button.\--success:focus {
+      background-color: #3eb5ac; }
+  .button.\--warning {
+    background-color: #f3bc65;
+    color: white; }
+    .button.\--warning:hover, .button.\--warning:focus {
+      background-color: #fad46b; }
+  .button.\--danger {
+    background-color: #cc0000;
+    color: white; }
+    .button.\--danger:hover, .button.\--danger:focus {
+      background-color: #f84545; }
+  .button.\--info {
+    background-color: #9175bd;
+    color: white; }
+    .button.\--info:hover, .button.\--info:focus {
+      background-color: #a88cd5; }
+  .button.\--stroke {
+    border-color: #d6e1e5;
+    background-color: white;
+    color: #02baf2; }
+    .button.\--stroke:hover, .button.\--stroke:focus {
+      border-color: #02baf2; }
 
 .hero {
   width: 100%;

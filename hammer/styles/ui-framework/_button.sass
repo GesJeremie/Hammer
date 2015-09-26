@@ -7,6 +7,7 @@
   outline: 0
   border: 0
   cursor: pointer
+  border: 2px solid transparent
   +border-radius(5px)
 
   &:hover, &:focus
@@ -16,8 +17,45 @@
     cursor: default
 
   @include option(primary)
-    background-color: $color-shade-3
-    color: $color-shade-1
+    background-color: $color-blue-reverse
+    color: white
 
     &:hover, &:focus
-      background-color: $color-shade-4
+      background-color: $color-blue
+
+  @include option(success)
+    background-color: $color-green-reverse
+    color: white
+
+    &:hover, &:focus
+      background-color: $color-green
+
+  @include option(warning)
+    background-color: $color-yellow-reverse
+    color: white
+
+    &:hover, &:focus
+      background-color: $color-yellow
+
+  @include option(danger)
+    background-color: $color-red-reverse
+    color: white
+
+    &:hover, &:focus
+      background-color: $color-red
+
+  @include option(info)
+    background-color: $color-purple-reverse
+    color: white
+
+    &:hover, &:focus
+      background-color: $color-purple
+
+  @include option(stroke)
+    border-color: $color-shade-5
+    background-color: white
+    color: $color-blue
+
+    &:hover, &:focus
+      border-color: $color-blue
+

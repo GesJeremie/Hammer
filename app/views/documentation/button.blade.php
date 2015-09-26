@@ -14,6 +14,10 @@
   <div>
     <a class="button" href="#">Default Button</a>
     <a class="button --primary">Primary Button</a>
+    <a class="button --danger">Danger Button</a>
+    <a class="button --warning">Warning Button</a>
+    <a class="button --info">Info Button</a>
+    <a class="button --stroke">Stroke Button</a>
   </div>
 
   <div class="example__spacer"></div>
