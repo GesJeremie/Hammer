@@ -8,11 +8,13 @@
 
 
 #--------------------------------------------------------------------------
-# Hammer Alert
+# Hammer UI
 #--------------------------------------------------------------------------
 #
-# Give the possibility to close an alert
+# Load the Javascript for Hammer UI.
+#
+# Note: You can config the file `plugins/hammer.coffee` to fit with your
+# project.
 ##
-require 'plugins/hammer/alert'
+require 'plugins/hammer/hammer'
 
-$.hammerAlert()

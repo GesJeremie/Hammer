@@ -171,7 +171,7 @@ $(function() {
 ;require.register("plugins/hammer/alert", function(exports, require, module) {
 $.hammerAlert = function(options) {
   options = $.extend({}, $.hammerAlert.options, options);
-  return $('[data-toggle=alert-close]').each(function() {
+  return $('.alert.\--with-close').each(function() {
     return $(this).find('span').on('click', function() {
       if (options.transition === true) {
         return $(this).parent().fadeOut(options.duration, function() {
@@ -190,14 +190,21 @@ $.hammerAlert.options = {
 };
 });
 
+;require.register("plugins/hammer/hammer", function(exports, require, module) {
+require('plugins/hammer/alert');
+
+$.hammerAlert({
+  transition: false,
+  duration: 500
+});
+});
+
 ;require.register("routes", function(exports, require, module) {
 module.exports = function(route) {};
 });
 
 ;require.register("start", function(exports, require, module) {
-require('plugins/hammer/alert');
-
-$.hammerAlert();
+require('plugins/hammer/hammer');
 });
 
 ;require.register("validators", function(exports, require, module) {

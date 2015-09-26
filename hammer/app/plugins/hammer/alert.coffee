@@ -14,7 +14,7 @@ $.hammerAlert = (options) ->
 
   options = $.extend({}, $.hammerAlert.options, options)
 
-  $('[data-toggle=alert-close]').each ->
+  $('.alert.\--with-close').each ->
 
     $(this).find('span').on 'click', ->
 
