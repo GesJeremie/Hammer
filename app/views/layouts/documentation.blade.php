@@ -28,10 +28,10 @@
       <div class="sidebar">
         <ul>
           <li><a href="#">Sass Structure</a></li>
-          <li><a href="{{ url('documentation/grid') }}">Grid System</a></li>
-          <li><a href="{{ url('documentation/typography') }}">Typography</a></li>
-          <li><a href="{{ url('documentation/sidebar') }}">Sidebar</a></li>
-          <li><a href="{{ url('documentation/alert') }}">Alerts</a></li>
+          <li class="@if ($page == 'grid') --active @endif"><a href="{{ url('documentation/grid') }}">Grid System</a></li>
+          <li class="@if ($page == 'typography') --active @endif"><a href="{{ url('documentation/typography') }}">Typography</a></li>
+          <li class="@if ($page == 'sidebar') --active @endif"><a href="{{ url('documentation/sidebar') }}">Sidebar</a></li>
+          <li class="@if ($page == 'alert') --active @endif"><a href="{{ url('documentation/alert') }}">Alert</a></li>
         </ul>
       </div>
     </div>

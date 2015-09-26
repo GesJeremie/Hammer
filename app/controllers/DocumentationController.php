@@ -26,6 +26,7 @@ class DocumentationController extends BaseController {
 	{
 		if (View::exists('documentation.' . $page))
 		{
+			View::share('page', $page);
 			$this->layout->content = View::make('documentation.' . $page);
 		}
 		else
