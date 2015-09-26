@@ -26,4 +26,19 @@
 
   <div class="example__spacer --md"></div>
 
+  <h2>Sizes</h2>
+
+  <p>You can change the size of your buttons, just add the right class.</p>
+
+  <div class="example__spacer"></div>
+
+  <div>
+    <a class="button --sm">Small Button</a>
+    <a class="button --lg">Large Button</a>
+    <a class="button --xl">Extra-Large Button</a>
+  </div>
+
+  <div class="example__spacer --md"></div>
+
+  <script src="https://gist.github.com/GesJeremie/56c7aa897806bcbcc127.js"></script>
 @endsection

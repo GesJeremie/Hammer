@@ -1341,6 +1341,15 @@ a {
   border-radius: 5px; }
   .button:hover, .button:focus {
     background-color: #e1eef3; }
+  .button.\--sm {
+    padding: 4px 10px;
+    font-size: 12px; }
+  .button.\--lg {
+    padding: 12px 18px;
+    font-size: 16px; }
+  .button.\--xl {
+    padding: 18px 24px;
+    font-size: 18px; }
   .button.\--disabled {
     cursor: default; }
   .button.\--primary {
