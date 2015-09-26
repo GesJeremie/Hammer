@@ -70,6 +70,10 @@
     </div>
   </div>
 
+  <div class="example__spacer"></div>
+
+  <script src="https://gist.github.com/GesJeremie/09c75dae6f8c2e7db9da.js"></script>
+
   <div class="example__spacer --md"></div>
 
   <h2>Debug the grid</h2>
@@ -83,6 +87,9 @@
     .grid-12.gridle-debug
   </div>
 
+  <div class="example__spacer"></div>
+
+  <script src="https://gist.github.com/GesJeremie/a14aa246de81c668dd22.js"></script>
 
 
 
