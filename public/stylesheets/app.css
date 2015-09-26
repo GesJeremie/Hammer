@@ -1323,6 +1323,31 @@ a {
   .alert.\--with-close {
     padding-right: 45px; }
 
+.button {
+  font-weight: 400;
+  padding: 8px 14px;
+  background-color: #d6e1e5;
+  color: #364347;
+  font-size: 14px;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  -webkit-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px; }
+  .button:hover, .button:focus {
+    background-color: #e1eef3; }
+  .button.\--disabled {
+    cursor: default; }
+  .button.\--primary {
+    background-color: #93a4aa;
+    color: #364347; }
+    .button.\--primary:hover, .button.\--primary:focus {
+      background-color: #b2c6cd; }
+
 .hero {
   width: 100%;
   color: white;

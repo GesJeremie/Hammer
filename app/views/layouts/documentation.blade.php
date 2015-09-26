@@ -32,6 +32,8 @@
           <li class="@if ($page == 'typography') --active @endif"><a href="{{ url('documentation/typography') }}">Typography</a></li>
           <li class="@if ($page == 'sidebar') --active @endif"><a href="{{ url('documentation/sidebar') }}">Sidebar</a></li>
           <li class="@if ($page == 'alert') --active @endif"><a href="{{ url('documentation/alert') }}">Alert</a></li>
+          <li class="@if ($page == 'button') --active @endif"><a href="{{ url('documentation/button') }}">Button</a></li>
+
         </ul>
       </div>
     </div>
