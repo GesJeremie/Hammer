@@ -27,6 +27,8 @@
 
   @include option(disabled)
     cursor: default
+    +opacity(0.4)
+    background-color: $color-shade-5
 
   @include option(primary)
     background-color: $color-blue-reverse
@@ -35,12 +37,18 @@
     &:hover, &:focus
       background-color: $color-blue
 
+    @include option(disabled)
+      background-color: $color-blue-reverse
+
   @include option(success)
     background-color: $color-green-reverse
     color: white
 
     &:hover, &:focus
       background-color: $color-green
+
+    @include option(disabled)
+      background-color: $color-green-reverse
 
   @include option(warning)
     background-color: $color-yellow-reverse
@@ -49,6 +57,9 @@
     &:hover, &:focus
       background-color: $color-yellow
 
+    @include option(disabled)
+      background-color: $color-yellow-reverse
+
   @include option(danger)
     background-color: $color-red-reverse
     color: white
@@ -56,12 +67,18 @@
     &:hover, &:focus
       background-color: $color-red
 
+    @include option(disabled)
+      background-color: $color-red-reverse
+
   @include option(info)
     background-color: $color-purple-reverse
     color: white
 
     &:hover, &:focus
       background-color: $color-purple
+
+    @include option(disabled)
+      background-color: $color-purple-reverse
 
   @include option(stroke)
     border-color: $color-shade-5
@@ -71,8 +88,12 @@
     &:hover, &:focus
       border-color: $color-blue
 
+    @include option(disabled)
+      border-color: $color-shade-5
+
   @include option(block)
     text-align: center
     width: 100%
     display: block
+
 

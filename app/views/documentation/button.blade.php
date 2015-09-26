@@ -56,5 +56,25 @@
 
   <script src="https://gist.github.com/GesJeremie/e7b3097f9ae650f0de47.js"></script>
 
+  <div class="example__spacer --md"></div>
+
+  <h2>Disabled</h2>
+
+  <p>Sometimes you need to <strong>mute</strong> a button.</p>
+
+  <div class="example__spacer"></div>
+
+  <div>
+    <a class="button --disabled" href="#">Default Button</a>
+    <a class="button --primary --disabled">Primary Button</a>
+    <a class="button --danger --disabled">Danger Button</a>
+    <a class="button --warning --disabled">Warning Button</a>
+    <a class="button --info --disabled">Info Button</a>
+    <a class="button --stroke --disabled">Stroke Button</a>
+  </div>
+
+  <div class="example__spacer --md"></div>
+
+  <script src="https://gist.github.com/GesJeremie/e4ebe834d0ebc378409a.js"></script>
 
 @endsection
