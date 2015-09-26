@@ -1409,6 +1409,38 @@ a {
     width: 100%;
     display: block; }
 
+.form label {
+  display: block;
+  margin-bottom: 1.5em;
+  margin-top: 1.5em;
+  font-weight: 700; }
+.form input[type="text"], .form input[type="password"], .form textarea, .form input[type="file"] {
+  display: block;
+  width: 100%;
+  height: 3em;
+  padding: 5px 15px;
+  border: 0;
+  border: 2px solid #d6e1e5;
+  outline: 0;
+  margin-bottom: 1.5em;
+  font-weight: 300;
+  color: #5e696d;
+  -webkit-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px; }
+  .form input[type="text"]:focus, .form input[type="password"]:focus, .form textarea:focus, .form input[type="file"]:focus {
+    border-color: #93a4aa; }
+.form textarea {
+  min-height: 6em;
+  padding-top: 15px; }
+.form .hammer-file-container {
+  display: block;
+  margin-bottom: 1.5em;
+  margin-top: 1.5em; }
+
 .hero {
   width: 100%;
   color: white;

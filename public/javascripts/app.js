@@ -190,6 +190,47 @@ $.hammerAlert.options = {
 };
 });
 
+;require.register("plugins/hammer/file", function(exports, require, module) {
+$.hammerFile = function() {
+  var baseTemplate;
+  baseTemplate = "<div class=\"hammer-file-container\"><a id=\"{id}\" class=\"{class}\">{label}</a></div>";
+  $('input[type=file]').each(function(index) {
+    var klass, label, template;
+    $(this).attr('id', 'hammer-file-target-' + index);
+    klass = $(this).attr('data-class');
+    label = $(this).attr('data-label');
+    template = baseTemplate;
+    if (klass !== void 0 && klass.length > 0) {
+      template = template.split('{class}').join(klass);
+    } else {
+      template = template.split('{class}').join('button');
+    }
+    if (label !== void 0 && label.length > 0) {
+      template = template.split('{label}').join(label);
+    } else {
+      template = template.split('{label}').join('Choose File');
+    }
+    template = template.split('{id}').join('hammer-file-toggle-' + index);
+    $(this).before(template);
+    return $(this).css('display', 'none');
+  });
+  $('[id^=hammer-file-toggle]').on('click', function() {
+    var target;
+    target = $(this).attr('id').split('toggle').join('target');
+    return $('#' + target).click();
+  });
+  return $('[id^=hammer-file-target]').on('change', function() {
+    var toggle, value;
+    value = $(this).val();
+    if (value.length > 0) {
+      value = value.replace("C:\\fakepath\\", '');
+      toggle = $(this).attr('id').split('target').join('toggle');
+      return $('#' + toggle).html(value);
+    }
+  });
+};
+});
+
 ;require.register("plugins/hammer/hammer", function(exports, require, module) {
 require('plugins/hammer/alert');
 
@@ -197,6 +238,10 @@ $.hammerAlert({
   transition: false,
   duration: 500
 });
+
+require('plugins/hammer/file');
+
+$.hammerFile();
 });
 
 ;require.register("routes", function(exports, require, module) {
