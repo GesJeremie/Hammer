@@ -231,6 +231,8 @@ $.hammerFile();
 $(":checkbox, :radio").labelauty({
   "class": 'hammer-checkboxes'
 });
+
+$('[data-toggle=tooltip]').tooltipster();
 });
 
 ;require.register("routes", function(exports, require, module) {

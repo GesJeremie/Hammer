@@ -1189,6 +1189,19 @@ html.default {
   width: 95%;
   margin: 0 auto; }
 
+.tooltipster-default {
+  border-radius: 5px;
+  border: 2px solid #364347;
+  background: #364347;
+  color: #fff; }
+  .tooltipster-default .tooltipster-content {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 8px 10px;
+    overflow: hidden; }
+
 html {
   box-sizing: border-box; }
 
@@ -1712,6 +1725,19 @@ a {
       .hello .hero__headline strong {
         text-transform: capitalize;
         border-bottom: 1px solid white; }
+
+.tooltipster-default {
+  border-radius: 5px;
+  border: 2px solid #364347;
+  background: #364347;
+  color: #fff; }
+  .tooltipster-default .tooltipster-content {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 8px 10px;
+    overflow: hidden; }
 
 
 /*# sourceMappingURL=app.css.map*/

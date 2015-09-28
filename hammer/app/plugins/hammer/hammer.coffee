@@ -17,3 +17,8 @@ $.hammerFile()
 ##
 $(":checkbox, :radio").labelauty
   class: 'hammer-checkboxes'
+
+##
+# Tooltip
+##
+$('[data-toggle=tooltip]').tooltipster()
