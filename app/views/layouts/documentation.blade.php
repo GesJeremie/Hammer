@@ -38,6 +38,7 @@
           <li class="@if ($page == 'form') --active @endif"><a href="{{ url('documentation/form') }}">Form</a></li>
           <li class="@if ($page == 'hero') --active @endif"><a href="{{ url('documentation/hero') }}">Hero</a></li>
           <li class="@if ($page == 'navbar') --active @endif"><a href="{{ url('documentation/navbar') }}">Navbar</a></li>
+          <li class="@if ($page == 'table') --active @endif"><a href="{{ url('documentation/table') }}">Table</a></li>
           <li class="@if ($page == 'tooltip') --active @endif"><a href="{{ url('documentation/tooltip') }}">Tooltip</a></li>
         </ul>
       </div>
