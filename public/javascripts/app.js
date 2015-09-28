@@ -227,6 +227,10 @@ $('.alert.\--with-close').hammerAlert();
 require('plugins/hammer/file');
 
 $.hammerFile();
+
+$(":checkbox, :radio").labelauty({
+  "class": 'hammer-checkboxes'
+});
 });
 
 ;require.register("routes", function(exports, require, module) {

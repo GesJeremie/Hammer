@@ -11,3 +11,9 @@ $('.alert.\--with-close').hammerAlert()
 require 'plugins/hammer/file'
 
 $.hammerFile()
+
+##
+# Checkboxes
+##
+$(":checkbox, :radio").labelauty
+  class: 'hammer-checkboxes'
