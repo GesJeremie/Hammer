@@ -12,32 +12,9 @@
 
 $.fn.hammerAlert = (options) ->
 
-  # Default settings
-  settings =
-    transition: false
-    duration: 500
-
   this.each ->
 
-    options = $.extend(settings, options)
-
-    transition = $(this).attr('data-transition')
-
-    ###
-    # Manage settings from data-attributes
-    if (typeof transition
-      options.transition = $(this).data('transition')
-
-    if $(this).hasAttr('data-transition-duration')
-      options.duration = $(this).data('transition-duration')
-    ###
-
+    # Apply to all span found
     $(this).find('span').on 'click', ->
 
-      if options.transition is true
-        $(this).parent().fadeOut options.duration, ->
-
-          $(this).remove()
-
-      else
         $(this).parent().remove()

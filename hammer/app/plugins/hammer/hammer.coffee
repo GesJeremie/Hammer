@@ -3,9 +3,7 @@
 ##
 require 'plugins/hammer/alert'
 
-$('.alert.\--with-close').hammerAlert
-  transition: true
-  duration: 500
+$('.alert.\--with-close').hammerAlert()
 
 ##
 # File

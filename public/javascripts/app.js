@@ -170,32 +170,9 @@ $(function() {
 
 ;require.register("plugins/hammer/alert", function(exports, require, module) {
 $.fn.hammerAlert = function(options) {
-  var settings;
-  settings = {
-    transition: false,
-    duration: 500
-  };
   return this.each(function() {
-    var transition;
-    options = $.extend(settings, options);
-    transition = $(this).attr('data-transition');
-
-    /*
-     * Manage settings from data-attributes
-    if (typeof transition
-      options.transition = $(this).data('transition')
-    
-    if $(this).hasAttr('data-transition-duration')
-      options.duration = $(this).data('transition-duration')
-     */
     return $(this).find('span').on('click', function() {
-      if (options.transition === true) {
-        return $(this).parent().fadeOut(options.duration, function() {
-          return $(this).remove();
-        });
-      } else {
-        return $(this).parent().remove();
-      }
+      return $(this).parent().remove();
     });
   });
 };
@@ -245,10 +222,7 @@ $.hammerFile = function() {
 ;require.register("plugins/hammer/hammer", function(exports, require, module) {
 require('plugins/hammer/alert');
 
-$('.alert.\--with-close').hammerAlert({
-  transition: true,
-  duration: 500
-});
+$('.alert.\--with-close').hammerAlert();
 
 require('plugins/hammer/file');
 
