@@ -1,7 +1,13 @@
 @extends('layouts.master')
 
 @section('content')
-  <h1>Hammer</h1>
-  <h4>Kick-ass your front-end development</h4>
-  <a href="{{ url('documentation') }}">Documentation</a>
+
+  <div class="container">
+    <div class="example__home">
+      <h1>Hammer</h1>
+      <h3>v0.0.1</h3>
+      <p>Copy / Paste the folder <strong>`hammer`</strong> in your project and kick ass your front-end development.</p>
+      <a class="button --info --xl" href="{{ url('documentation') }}">Documentation</a>
+    </div>
+  </div>
 @endsection

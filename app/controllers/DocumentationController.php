@@ -19,7 +19,7 @@ class DocumentationController extends BaseController {
 
 	public function getIndex()
 	{
-		return 'index';
+		return Redirect::to('documentation/grid');
 	}
 
 	public function getPage($page)

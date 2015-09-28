@@ -23,11 +23,13 @@
 <body>
 
   <div class="container-fluid">
-    <div class="example__spacer --md"></div>
+    <div class="example__logo">
+      <h3>Hammer</h3>
+    </div>
+
     <div class="grid-2">
       <div class="sidebar">
         <ul>
-          <li><a href="#">Sass Structure</a></li>
           <li class="@if ($page == 'grid') --active @endif"><a href="{{ url('documentation/grid') }}">Grid System</a></li>
           <li class="@if ($page == 'typography') --active @endif"><a href="{{ url('documentation/typography') }}">Typography</a></li>
           <li class="@if ($page == 'sidebar') --active @endif"><a href="{{ url('documentation/sidebar') }}">Sidebar</a></li>

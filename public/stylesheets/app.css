@@ -1599,6 +1599,9 @@ a {
   .example__section h2 {
     margin-top: 1em;
     margin-bottom: 1em; }
+  .example__section h3 {
+    margin-top: 1em;
+    margin-bottom: 1em; }
   .example__section p {
     margin-bottom: 2em; }
   .example__section .gist {
@@ -1610,6 +1613,31 @@ a {
   content: " "; }
   .example__spacer.\--md {
     height: 4em; }
+.example__home {
+  text-align: center;
+  margin-top: 10em; }
+  .example__home h1 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 90px; }
+  .example__home h3 {
+    font-style: normal; }
+  .example__home p {
+    text-align: center;
+    margin-bottom: 2em;
+    font-weight: 300;
+    margin-top: 1em;
+    font-size: 23px; }
+.example__logo {
+  border-bottom: 1px solid #d6e1e5;
+  margin-top: 30px;
+  margin-bottom: 30px; }
+  .example__logo h3 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    font-style: normal;
+    padding-bottom: 20px; }
 
 .hello {
   color: inherit; }

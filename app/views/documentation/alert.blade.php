@@ -59,17 +59,26 @@
     <h2>Remove an alert</h2>
 
     <p>
-      Hammer provides a tiny jQuery plugin to remove the alerts.
+      Hammer provides a tiny jQuery plugin to remove the alerts. Just add the class <strong>`--with-close`</strong>.
     </p>
 
-    <div class="alert --with-close" data-toggle="alert-close">I'm an alert and you can remove me ! <span><i class="fa fa-times"></i></span></div>
+    <div class="alert --with-close">I'm an alert and you can remove me ! <span><i class="fa fa-times"></i></span></div>
 
     <br/>
 
-    <div class="alert --success --with-close" data-toggle="alert-close">I'm an alert and you can remove me ! <span><i class="fa fa-times"></i></span></div>
+    <div class="alert --success --with-close">I'm an alert and you can remove me ! <span><i class="fa fa-times"></i></span></div>
 
 
     <script src="https://gist.github.com/GesJeremie/3d6b9a5e9ed69b4e731d.js"></script>
+
+    <h3>Options</h3>
+
+    <p>
+      Some options can be given via <strong>`data-* attributes`</strong> to add a transition.
+    </p>
+
+    <div class="alert --info --with-close" data-transition="true" data-transition-duration="300">When you delete me, I have a really cool transition <span><i class="fa fa-times"></i></span></div>
+
 
   </div>
 

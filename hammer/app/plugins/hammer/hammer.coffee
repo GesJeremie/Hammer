@@ -3,8 +3,8 @@
 ##
 require 'plugins/hammer/alert'
 
-$.hammerAlert
-  transition: false
+$('.alert.\--with-close').hammerAlert
+  transition: true
   duration: 500
 
 ##

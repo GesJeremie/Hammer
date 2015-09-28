@@ -10,11 +10,27 @@
 # duration - Duration of a transition
 ##
 
-$.hammerAlert = (options) ->
+$.fn.hammerAlert = (options) ->
 
-  options = $.extend({}, $.hammerAlert.options, options)
+  # Default settings
+  settings =
+    transition: false
+    duration: 500
 
-  $('.alert.\--with-close').each ->
+  this.each ->
+
+    options = $.extend(settings, options)
+
+    transition = $(this).attr('data-transition')
+
+    ###
+    # Manage settings from data-attributes
+    if (typeof transition
+      options.transition = $(this).data('transition')
+
+    if $(this).hasAttr('data-transition-duration')
+      options.duration = $(this).data('transition-duration')
+    ###
 
     $(this).find('span').on 'click', ->
 
@@ -25,8 +41,3 @@ $.hammerAlert = (options) ->
 
       else
         $(this).parent().remove()
-
-
-$.hammerAlert.options =
-  transition: false
-  duration: 500
